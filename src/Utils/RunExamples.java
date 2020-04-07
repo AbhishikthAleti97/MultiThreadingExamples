@@ -3,6 +3,7 @@ import Examples.BasicMultiThread;
 import Examples.MultiNumberSync;
 import Examples.MultiPrintNumbers;
 import Examples.MultiThreadInterface;
+import Examples.RunSynchronizedThreads;
 import Examples.SetRandomName;
 import Examples.SetRandomPriority;
 import Examples.SleepyThread;
@@ -46,6 +47,11 @@ public class RunExamples {
 			System.out.println("Running a thread with a random priority set to it between 1 and 10");
 			SetRandomPriority srp = new SetRandomPriority();
 			srp.runThread();
+			break;
+		case 7:
+			System.out.println("Running two threads with a synchronized block");
+			RunSynchronizedThreads rst = new RunSynchronizedThreads();
+			rst.runThread();
 			break;
 		default:
 			System.out.println("Sorry, that was an invalid option. Please pick another item from the menu.\n");

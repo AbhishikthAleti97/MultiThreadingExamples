@@ -20,13 +20,15 @@ public class MultiNumberSync extends Thread{
 		MultiNumberSync mNS1 = new MultiNumberSync();
 		MultiNumberSync mNS2 = new MultiNumberSync();
 		mNS1.start();
+		mNS2.start();
 		try {
 			mNS1.join();
+			mNS2.join();
 		}catch(Exception e)
 		{
 			System.out.print("Exception caught "+e);
 		}
-		mNS2.start();
+		
 		
 	}
 }

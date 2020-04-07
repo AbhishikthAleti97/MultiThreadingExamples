@@ -15,6 +15,7 @@ public class ExampleMenu {
 			System.out.println("5. Demonstrate Multiple Threads running, with join");
 			System.out.println("6. Run a thread by giving it a random name");
 			System.out.println("7. Set a random priority to a thread");
+			System.out.println("8. Demonstrate Multiple threads running, with a synchronized block");
 			System.out.println("0. Exit");
 			Scanner sc = new Scanner(System.in);
 			int opt = sc.nextInt() - 1;
